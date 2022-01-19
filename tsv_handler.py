@@ -31,8 +31,6 @@ class DownloadHandler(FileSystemEventHandler):
 					downloaded_tsv_path = download_dir + r"\\" + filename
 					new_tsv_path = tsv_dir + r"\\" + datetime.now().strftime("tsv_%d-%m-%Y-%H-%M-%S") + ".tsv"
 					os.rename(downloaded_tsv_path, new_tsv_path)
-					# new_tsv_path = tsv_dir + r"\\" + filename
-
 		except Exception as Argument:
 			log_error_and_close(Argument)
 
@@ -47,7 +45,6 @@ class TsvHandler(PatternMatchingEventHandler):
 			downloaded_tsvs.sort(reverse=True)
 			tsv_to_open_path = tsv_dir + r"\\" + downloaded_tsvs[0]
 			os.startfile(tsv_to_open_path)
-
 		except Exception as Argument:
 			log_error_and_close(Argument)
 
