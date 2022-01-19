@@ -25,3 +25,5 @@ The script recognizes files named "fnd... .tsv" that appear in the "Download" fo
 * It makes no difference what browser you use for downloads. <br/>
 * If you manually copy a file named "fnd_gfm_XXXXXX.tsv" into "Download" - it will be renamed, then moved to "tsv" folder, and then opened. Same as if you downloaded it. <br/>
 * The script doesn't produce any additional/temporary files on your drive. It terminates on system closure or if you kill it via task manager.
+
+![task_mng](https://github.com/pantomassi/tsv_handler/blob/main/tsv_handler_task_manager.PNG)
